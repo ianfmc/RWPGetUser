@@ -1,0 +1,36 @@
+{
+  "name": "rwpgetuser",
+  "version": "1.0.0",
+  "description": "Lamdba Function to add RWP Team to DynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./spec/*.spec.js",
+    "cover": "istanbul cover ./node_modules/.bin/_mocha --report html ./spec/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianfmc/RWPGetTeam.git"
+  },
+  "keywords": [
+    "RWP",
+    "DynamoDB",
+    "Add",
+    "Team"
+  ],
+  "author": "Ian F. McCallum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianfmc/RWPGetTeam/issues"
+  },
+  "homepage": "https://github.com/ianfmc/RWPGetTeam#readme",
+  "devDependencies": {
+    "aws-sdk-mock": "^1.5.0",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.6.11"
+  }
+}
