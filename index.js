@@ -2,7 +2,7 @@ var AWS = require('aws-sdk');
 
 exports.handler = function(event, context, callback) {
     
-    var userEmail = event.email;
+    var userEmail = event.email.toString();
 
     var docClient = new AWS.DynamoDB.DocumentClient({region: 'us-east-1'});
     var userParams = {
